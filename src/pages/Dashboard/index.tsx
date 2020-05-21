@@ -1,14 +1,11 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 
-import logoImg from '../../assets/logo.svg';
-
 import { Title, Form, Repositories } from './styles';
 
 const Dashboard: React.FC = () => {
   return (
     <>
-      <img src={logoImg} alt="Github Explorer" />
       <Title>Explorer repositórios do Github</Title>
 
       <Form action="">
