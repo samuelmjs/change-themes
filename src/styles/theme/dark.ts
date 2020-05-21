@@ -5,7 +5,7 @@ export default {
 
   colors: {
     primary: '#04d361',
-    shape: '#333',
+    shape: '#222',
 
     white: '#fff',
 
