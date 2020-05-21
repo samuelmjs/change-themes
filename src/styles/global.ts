@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import githubBackgroundLight from '../assets/github-background-light.svg';
+import githubBackgroundDark from '../assets/github-background-dark.svg';
 
 export default createGlobalStyle`
   *{
@@ -11,7 +12,8 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #f0f0f5 url(${githubBackgroundLight}) no-repeat 70% top;
+    background: ${(props) => props.theme.colors.background} url(${(props) =>
+  props.theme.image.background}) no-repeat 70% top;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -20,7 +22,7 @@ export default createGlobalStyle`
   }
 
   #root{
-    max-width: 960px;
+    max-width: 920px;
     margin: 0 auto;
     padding: 40px 20px;
   }

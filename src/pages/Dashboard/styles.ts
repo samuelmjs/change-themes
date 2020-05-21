@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
+import { shade, lighten } from 'polished';
 
 export const Title = styled.h1`
   font-size: 40px;
-  color: #3a3a3a;
+  color: ${(props) => props.theme.colors.title};
   max-width: 450px;
   line-height: 56px;
 
@@ -20,27 +20,28 @@ export const Form = styled.form`
     flex: 1;
     height: 70px;
     padding: 0 24px;
+    background: ${(props) => props.theme.colors.shape};
     border: 0;
     border-radius: 5px 0 0 5px;
-    color: #3a3a3a;
+    color: ${(props) => props.theme.colors.title};
 
     &::placeholder {
-      color: #a8a8b3;
+      color: ${(props) => props.theme.colors.description};
     }
   }
 
   button {
     width: 210px;
     height: 70px;
-    background: #04d361;
+    background: ${(props) => props.theme.colors.primary};
     border-radius: 0 5px 5px 0;
     border: 0;
-    color: #fff;
+    color: ${(props) => props.theme.colors.white};
     font-weight: bold;
     transition: background 0.2s;
 
     &:hover {
-      background: ${shade(0.2, '#04d361')};
+      background: ${(props) => shade(0.2, props.theme.colors.primary)};
     }
   }
 `;
@@ -50,7 +51,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #fff;
+    background: ${(props) => props.theme.colors.shape};
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -80,12 +81,12 @@ export const Repositories = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: ${(props) => props.theme.colors.text};
       }
 
       p {
         font-size: 18px;
-        color: #a8a8b3;
+        color: ${(props) => props.theme.colors.description};
         margin-top: 4px;
       }
     }
