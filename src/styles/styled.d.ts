@@ -9,6 +9,7 @@ declare module 'styled-components' {
       shape: string;
 
       white: string;
+      red: string;
 
       background: string;
       title: string;

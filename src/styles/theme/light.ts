@@ -8,6 +8,7 @@ export default {
     shape: '#fff',
 
     white: '#fff',
+    red: '#c53030',
 
     background: '#f0f0f5',
     title: '#3a3a3a',
