@@ -5,9 +5,10 @@ export default {
 
   colors: {
     primary: '#04d361',
-    shape: '#333',
+    shape: '#222',
 
     white: '#fff',
+    red: '#c53030',
 
     background: '#111',
     title: '#eee',
